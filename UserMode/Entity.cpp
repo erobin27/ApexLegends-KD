@@ -51,8 +51,8 @@ bool NoRecoil(bool shouldReset) {
 	if (!lPlayer.Entity) return false;
 
 	int held = lPlayer.getWeapon();
+
 	switch (held) {
-		
 		case BOCEK:		 return false;
 		case MELEE_SURVIVAL: return false;
 		case G7_SCOUT:		return false;

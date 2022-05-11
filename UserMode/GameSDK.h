@@ -47,7 +47,7 @@ namespace offsets
 	uintptr_t glow_color = 0x1d0;
 
 	namespace Glow{
-		uintptr_t glow_enable = 0x3c8;	//GlowContext
+		uintptr_t glow_enable = 0x9a1;	//GlowContext
 		uintptr_t glow_type = 0x2c0;	//<--- questionable
 		uintptr_t glow_color = 0x1d0;	//correct
 		uintptr_t glow_through_walls = 0x3d0;
@@ -263,7 +263,7 @@ public:
 		//std::cout << ""
 		wepHandle &= 0xffff;
 		uint64_t heldWeapon = mem->Read<uint64_t>(base_address + offsets::cl_entitylist + (wepHandle << 5));
-		int heldWeaponId = mem->Read<int>(heldWeapon + 0x1884); //held + m_weaponNameIndex in [RecvTable.DT_WeaponX]
+		int heldWeaponId = mem->Read<int>(heldWeapon + 0x16c4); //held + m_weaponNameIndex in [RecvTable.DT_WeaponX]
 
 
 		return heldWeaponId;
