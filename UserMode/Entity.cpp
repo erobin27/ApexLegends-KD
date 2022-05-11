@@ -53,26 +53,26 @@ bool NoRecoil(bool shouldReset) {
 	int held = lPlayer.getWeapon();
 	switch (held) {
 		
-		case bow:		 return false;
-		case melee_survival: return false;
-		case scout:		return false;
+		case BOCEK:		 return false;
+		case MELEE_SURVIVAL: return false;
+		case G7_SCOUT:		return false;
 		//shotgun
-		case peacekeeper: return false;
-		case mastiff: return false;
-		case eva8: return false;
-		case mozambique: return false;
+		case PEACEKEEPER: return false;
+		case MASTIFF: return false;
+		case EVA8_AUTO: return false;
+		case MOZAMBIQUE: return false;
 		//Sniper
-		case chargerifle: return false;
-		case longbow:	 return false;
-		case kraber:	 return false;
-		case sentinel:	 return false;
+		case CHARGE_RIFLE: return false;
+		case LONGBOW:	 return false;
+		case KRABER:	 return false;
+		case SENTINEL:	 return false;
 		//light
-		case p2020:		return false;
+		case P2020:		return false;
 		//heavy
-		case repeater:	return false;
-		case hemlock:	return false;
-		case prowler:	return false;
-		case wingman:	 return false;
+		case REPEATER:	return false;
+		case HEMLOK:	return false;
+		case PROWLER:	return false;
+		case WINGMAN:	 return false;
 	}
 
 	static Vector3 LastPunchAngle = Vector3(0.0f, 0.0f, 0.0f);
